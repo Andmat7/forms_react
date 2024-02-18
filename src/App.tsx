@@ -8,7 +8,15 @@ registerCoreBlocks();
 const App = () => {
   return (
 
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div style={{ width: "100%", height: "100vh" }} className="flex flex-col">
+      <header className="bg-black text-white">
+        <p className="h-10 font-sans text-right text-lg ">
+        Call us: (855) 962-5303
+        </p>
+      <div className="bg-green-600 text-center font-bold text-2xl p-4">
+      Today Only: Sign Up and Save $10—With Speedy, Free Shipping
+      </div>
+      </header>
       <img src="logo192.png" alt="logo" />
 
 
