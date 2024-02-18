@@ -5,6 +5,19 @@ import "./styles.css";
 
 registerCoreBlocks();
 
+
+function Ellipse() {
+  return (<div className="absolute w-[835px] h-[835px] bg-white" style={{
+    mixBlendMode: 'overlay',
+    opacity: 0.55,
+    filter: 'blur(50px)',
+    borderRadius: '50%'
+  }}>
+    adsfasdfasdf
+  </div>);
+}
+
+
 const App = () => {
   return (
 
@@ -19,11 +32,12 @@ const App = () => {
           Today Only: Sign Up and Save $10—With Speedy, Free Shipping
         </div>
       </header>
-
-      <div className="flex flex-col items-center">
+      <Ellipse/>
+      <div className="flex flex-col items-center ">
         <div className="h-[160px] flex">
           <img src="logo192.png" alt="logo" className="object-cover h-auto w-full" />
         </div>
+
 
         <div className="w-full h-[32rem]">
           <Form
