@@ -7,8 +7,11 @@ registerCoreBlocks();
 
 const App = () => {
   return (
+
     <div style={{ width: "100%", height: "100vh" }}>
-      
+      <img src="logo192.png" alt="logo" />
+
+
       <Form
         formId={1}
         applyLogic={true}
@@ -18,8 +21,8 @@ const App = () => {
               name: "welcome-screen",
               id: "jg1401r",
               attributes: {
-                label: "Intake form",
-                description: "This is just a test"
+                label: "Weight loss made easy with a prescription to semaglutide",
+                description: "Lose up to 1.5% of your body fat per week"
               }
             },
             {
@@ -148,6 +151,50 @@ const App = () => {
           }, 500);
         }}
       />
+      <img src="brands.png" alt="logo" />
+      <div>
+        <h3>Experienced U.S. Licensed Doctors</h3>
+        <p>
+        “I firmly believe that managing weight should be straightforward and accessible for anyone who seeks it. That’s why our program at SkinnyRx is exceptional—you can receive FDA-approved, clinically-proven semaglutide treatment delivered directly to your doorstep at a fraction of the usual cost.”
+        </p>
+        <img src="doctor.png" alt="logo" />
+
+      </div>
+
+      <div>
+        <h2>Believe the Hype:</h2>
+        <h2>Customer Success with Clinically</h2>
+        <h2>Proven Meds</h2>
+        <h3>WebMD reviews for Generic Semaglutide®</h3>
+        <div>
+          <p>
+          “Semaglutide Has Revolutionized My Journey to Health in My 70s”
+          </p>
+          <img src="starts.png" alt="" />
+          <p>
+          The transformation has been incredibly profound. At 78 and 76 years old, my spouse and I have experienced a significant resurgence in our health and vitality thanks to semaglutide. It’s been a cornerstone in our weight loss journey, and we’re living proof that it’s never too late to start. If you’re hesitating, don’t. The change it brings is worth every moment. Wishing you all the best as you rediscover your health and joy in life!
+          </p>
+          <p>- Old Sparky</p>
+        </div>
+      </div>
+      <footer>
+        <img src="logo192.png" alt="logo" />
+        <h3>All trademarks are the property of their respective owners.</h3>
+        <h3>256-Bit Tls Security</h3>
+        <h3>Terms of Service</h3>
+        <div>
+          <span>
+          Terms of Use
+          </span>
+          <span>
+          Privacy Policy
+          </span>
+          <span>
+          Consent to Telehealth
+          </span>
+        </div>
+        <h3>Physician Code of Conduct</h3>
+      </footer>
     </div>
   );
 };
