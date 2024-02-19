@@ -10,12 +10,12 @@ const blocks: FormBlocks = [{
         buttonText: "GET STARTED",
     }
 }, {
-    name: "short-text",
+    name: "email",
     id: "kd12edg",
     attributes: {
         layout: "split-right",
         required: true,
-        label: "Let's start with your name"
+        label: "What's your email address?"
     }
 }, {
     name: "slider",
