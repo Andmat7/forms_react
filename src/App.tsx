@@ -7,6 +7,7 @@ import { Doctors } from "./components/init_page/Doctors";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Opinions } from "./components/Opinions";
+import { Logo } from "./components/Logo";
 
 registerCoreBlocks();
 
@@ -20,7 +21,6 @@ function Ellipse() {
   </div>);
 }
 
-
 const App = () => {
   return (
 
@@ -29,13 +29,11 @@ const App = () => {
       <Header />
       <Ellipse />
       <div className="flex flex-col items-center  max-w-[620px] ">
-        <div className="h-[160px] flex">
-          <img src="logo192.png" alt="logo" className="object-cover h-auto w-full" />
-        </div>
+        <Logo />
         <FormSemaglutide />
-        <img src="brands.png" alt="logo" />
+        <img src="brands.png" alt="brands" />
         <Doctors />
-        <Opinions/>
+        <Opinions />
       </div>
 
 
