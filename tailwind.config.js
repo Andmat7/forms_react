@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
         serif: ['Charter', 'serif'],
+        azo: ['Azo Sans', 'sans-serif'],
       },
     },
   },

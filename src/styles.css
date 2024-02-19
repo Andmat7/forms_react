@@ -13,3 +13,19 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Azo Sans';
+  src: url('./fonts/azo-sans/AzoSans-Regular.woff2') format('woff2'),
+       url('./fonts/azo-sans/AzoSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Azo Sans';
+  src: url('./fonts/azo-sans/AzoSans-Bold.woff2') format('woff2'),
+       url('./fonts/azo-sans/AzoSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
