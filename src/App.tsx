@@ -6,6 +6,7 @@ import { FormSemaglutide } from "./components/FormSemaglutide";
 import { Doctors } from "./components/init_page/Doctors";
 import { Opinion } from "./Opinion";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 registerCoreBlocks();
 
@@ -22,12 +23,13 @@ function Ellipse() {
 
 
 
+
 const App = () => {
   return (
 
     <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center ">
 
-      <Header/>
+      <Header />
       <Ellipse />
       <div className="flex flex-col items-center  max-w-[620px] ">
         <div className="h-[160px] flex">
@@ -40,24 +42,7 @@ const App = () => {
       </div>
 
 
-      <footer>
-        <img src="logo192.png" alt="logo" />
-        <h3>All trademarks are the property of their respective owners.</h3>
-        <h3>256-Bit Tls Security</h3>
-        <h3>Terms of Service</h3>
-        <div>
-          <span>
-            Terms of Use
-          </span>
-          <span>
-            Privacy Policy
-          </span>
-          <span>
-            Consent to Telehealth
-          </span>
-        </div>
-        <h3>Physician Code of Conduct</h3>
-      </footer>
+      <Footer/>
     </div>
   );
 };
