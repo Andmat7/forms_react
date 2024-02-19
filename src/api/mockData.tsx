@@ -13,9 +13,8 @@ const blocks: FormBlocks = [{
     name: "email",
     id: "kd12edg",
     attributes: {
-        layout: "split-right",
         required: true,
-        label: "What's your email address?"
+        label: "What's your email address?",
     }
 }, {
     name: "slider",

@@ -23,9 +23,11 @@ export function FormSemaglutide() {
     blocks: blocks,
     settings: {
       animationDirection: "horizontal",
-      disableWheelSwiping: false,
-      disableNavigationArrows: false,
-      disableProgressBar: false
+      disableWheelSwiping: true,
+      disableNavigationArrows: true,
+      disableProgressBar: true,
+      showQuestionsNumbers: false,
+      showLettersOnAnswers: false,
     },
     theme: ThemeFormSemaglutide,
     messages: {
@@ -33,7 +35,7 @@ export function FormSemaglutide() {
     }
   };
   return (
-    <div className="w-full h-[27rem] min-h-[27rem] p-[20px] bg-white shadow border rounded opacity-100 max-w-[620px]">
+    <div className="w-full  min-h-[27rem] p-[20px] bg-white shadow border rounded opacity-100 max-w-[620px] flex flex-col">
       <Form formId={1} applyLogic={true} formObj={formObj} onSubmit={(data, { completeForm, setIsSubmitting }) => {
         setTimeout(() => {
           setIsSubmitting(false);
