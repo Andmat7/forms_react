@@ -6,3 +6,10 @@ body {
   margin: 0 !important;
   height: 100%;
 }
+@font-face {
+  font-family: 'Charter';
+  src: 
+       url('./fonts/charter_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
