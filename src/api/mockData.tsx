@@ -1,7 +1,5 @@
 import { FormObj } from "@quillforms/renderer-core/src/types";
-import type {
-    FormBlocks,
-} from '@quillforms/types';
+import type { FormBlocks } from '@quillforms/types';
 
 const blocks: FormBlocks = [{
     name: "welcome-screen",
