@@ -1,7 +1,7 @@
 import { Form } from "@quillforms/renderer-core";
 export 
 function FormSemaglutide() {
-  return (<div className="w-full h-[32rem] w-[38rem]">
+  return (<div className="w-full h-[27rem] w-[38rem] p-[20px] bg-white">
     <Form formId={1} applyLogic={true} formObj={{
       blocks: [{
         name: "welcome-screen",
@@ -110,11 +110,11 @@ function FormSemaglutide() {
         },
         questionsColor: "#000",
         questionsLabelFontSize: {
-            lg: "2.5rem",
+            lg: "2.7rem",
             sm: "1.5rem"
         },
         questionsLabelLineHeight: {
-            lg: "3.5rem",
+            lg: "2.9rem",
             sm: "2.5rem"
         },
         answersColor: "#0aa7c2",
