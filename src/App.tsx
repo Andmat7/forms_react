@@ -14,7 +14,6 @@ function Ellipse() {
     filter: 'blur(50px)',
     borderRadius: '50%'
   }}>
-    adsfasdfasdf
   </div>);
 }
 
@@ -25,7 +24,7 @@ const App = () => {
   return (
 
     <div style={{ width: "100%", height: "100vh" }}>
-      <div className="absolute w-full bg-[#FFD1F3] h-[800px] z-[-10]">
+      <div className="absolute w-full bg-[#FFD1F3] h-[400px] z-[-10]">
       </div>
       <header className="w-full bg-black text-white ">
         <p className="h-10 font-sans text-right text-lg ">
