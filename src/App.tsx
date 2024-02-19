@@ -10,7 +10,6 @@ import { Footer } from "./components/Footer";
 
 registerCoreBlocks();
 
-
 function Ellipse() {
   return (<div className="absolute w-[835px] h-[835px] bg-white" style={{
     mixBlendMode: 'overlay',
@@ -21,13 +20,10 @@ function Ellipse() {
   </div>);
 }
 
-
-
-
 const App = () => {
   return (
 
-    <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center ">
+    <div style={{ width: "100%", height: "100vh" }} className="font-sans flex flex-col items-center ">
 
       <Header />
       <Ellipse />
