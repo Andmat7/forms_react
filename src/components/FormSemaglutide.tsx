@@ -4,7 +4,7 @@ import { Form } from "@quillforms/renderer-core";
 import { FormObj } from '@quillforms/renderer-core/src/types';
 import { ThemeFormSemaglutide } from './ThemeFormSemaglutide';
 
-export function FormSemaglutide() {
+export function FormSemaglutide(props: any) {
   const [blocks, setBlocks] = useState(null);
 
   useEffect(() => {
@@ -36,12 +36,21 @@ export function FormSemaglutide() {
   };
   return (
     <div className="w-full  min-h-[27rem] p-[20px] bg-white shadow border rounded opacity-100 max-w-[620px] flex flex-col">
-      <Form formId={1} applyLogic={true} formObj={formObj} onSubmit={(data, { completeForm, setIsSubmitting }) => {
-        setTimeout(() => {
-          setIsSubmitting(false);
-          completeForm();
-        }, 500);
-      }} />
+      <Form
+        formId={1}
+        applyLogic={true}
+        formObj={formObj}
+        onSubmit={(data, { completeForm, setIsSubmitting }) => {
+          setTimeout(() => {
+            setIsSubmitting(false);
+            completeForm();
+          }, 500);
+        }}
+        beforeGoingNext={({goNext,currentBlockId}) => {
+          console.log('beforeGoingNext', currentBlockId);
+          goNext();
+        }}
+      />
     </div>
   );
 }

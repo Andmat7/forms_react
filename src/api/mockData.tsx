@@ -11,10 +11,11 @@ const blocks: FormBlocks = [{
     }
 }, {
     name: "email",
-    id: "kd12edg",
+    id: "email",
     attributes: {
         required: true,
-        label: "What's your email address?",
+        label: "email address",
+        description: "Please use the same information below so we can match your profile."
     }
 }, {
     name: "slider",
