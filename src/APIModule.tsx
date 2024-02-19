@@ -31,5 +31,5 @@ mockAxios.interceptors.response.use(
 
 export const fetchForm = (): Promise<any> => {
     return mockAxios.get('/api/v1/form/blocks')
-        .then(response => response.data);
+        .then(response => response.data.blocks);
 };
