@@ -5,6 +5,7 @@ import "./styles.css";
 import { FormSemaglutide } from "./components/FormSemaglutide";
 import { Doctors } from "./components/init_page/Doctors";
 import { Opinion } from "./Opinion";
+import { Header } from "./Header";
 
 registerCoreBlocks();
 
@@ -20,20 +21,13 @@ function Ellipse() {
 }
 
 
+
 const App = () => {
   return (
 
     <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center ">
-      <div className="absolute w-full bg-[#FFD1F3] h-[400px] z-[-10] ">
-      </div>
-      <header className="w-full bg-black text-white ">
-        <p className="h-10 font-sans text-right text-lg ">
-          Call us: (855) 962-5303
-        </p>
-        <div className="bg-green-600 text-center font-bold text-2xl p-4">
-          Today Only: Sign Up and Save $10—With Speedy, Free Shipping
-        </div>
-      </header>
+
+      <Header/>
       <Ellipse />
       <div className="flex flex-col items-center  max-w-[620px] ">
         <div className="h-[160px] flex">
@@ -42,7 +36,7 @@ const App = () => {
         <FormSemaglutide />
         <img src="brands.png" alt="logo" />
         <Doctors />
-        <Opinion/>
+        <Opinion />
       </div>
 
 
