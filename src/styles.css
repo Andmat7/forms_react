@@ -6,17 +6,19 @@ body {
   margin: 0 !important;
   height: 100%;
 }
+
 @font-face {
   font-family: 'Charter';
-  src: 
-       url('./fonts/charter_bold.woff') format('woff');
+  src:
+    url('./fonts/charter_bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Azo Sans';
   src: url('./fonts/azo-sans/AzoSans-Regular.woff2') format('woff2'),
-       url('./fonts/azo-sans/AzoSans-Regular.woff') format('woff');
+    url('./fonts/azo-sans/AzoSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -24,8 +26,7 @@ body {
 @font-face {
   font-family: 'Azo Sans';
   src: url('./fonts/azo-sans/AzoSans-Bold.woff2') format('woff2'),
-       url('./fonts/azo-sans/AzoSans-Bold.woff') format('woff');
+    url('./fonts/azo-sans/AzoSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
-
