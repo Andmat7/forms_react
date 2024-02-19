@@ -4,9 +4,9 @@ import { registerCoreBlocks } from "@quillforms/react-renderer-utils";
 import "./styles.css";
 import { FormSemaglutide } from "./components/FormSemaglutide";
 import { Doctors } from "./components/init_page/Doctors";
-import { Opinion } from "./Opinion";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import { Opinion } from "./components/Opinion";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 registerCoreBlocks();
 
