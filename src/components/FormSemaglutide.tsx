@@ -8,7 +8,8 @@ function FormSemaglutide() {
         id: "jg1401r",
         attributes: {
           label: "Weight loss made easy with a prescription to semaglutide",
-          description: "Lose up to 1.5% of your body fat per week"
+          description: "Lose up to 1.5% of your body fat per week",
+          buttonText: "GET STARTED",
         }
       }, {
         name: "short-text",
@@ -92,14 +93,14 @@ function FormSemaglutide() {
         }
       }],
       settings: {
-        animationDirection: "vertical",
+        animationDirection: "horizontal",
         disableWheelSwiping: false,
         disableNavigationArrows: false,
         disableProgressBar: false
       },
       theme: {
         font: "Roboto",
-        buttonsBgColor: "#9b51e0",
+        buttonsBgColor: "#190053",
         logo: {
           src: ""
         },
@@ -110,8 +111,12 @@ function FormSemaglutide() {
         errorsFontColor: "#fff",
         errorsBgColor: "#f00",
         progressBarFillColor: "#000",
-        progressBarBgColor: "#ccc"
+        progressBarBgColor: "#ccc",
+      },
+      messages: {
+        'label.hintText.enter':''
       }
+
     }} onSubmit={(data, {
       completeForm,
       setIsSubmitting
