@@ -33,7 +33,7 @@ export function FormSemaglutide() {
     }
   };
   return (
-    <div className="w-full h-[27rem] p-[20px] bg-white shadow border rounded opacity-100">
+    <div className="w-full h-[27rem] p-[20px] bg-white shadow border rounded opacity-100 max-w-[620px]">
       <Form formId={1} applyLogic={true} formObj={formObj} onSubmit={(data, { completeForm, setIsSubmitting }) => {
         setTimeout(() => {
           setIsSubmitting(false);
