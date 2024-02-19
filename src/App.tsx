@@ -3,6 +3,7 @@ import "@quillforms/renderer-core/build-style/style.css";
 import { registerCoreBlocks } from "@quillforms/react-renderer-utils";
 import "./styles.css";
 import { FormSemaglutide } from "./components/FormSemaglutide";
+import { Doctors } from "./components/init_page/Doctors";
 
 registerCoreBlocks();
 
@@ -16,9 +17,6 @@ function Ellipse() {
   }}>
   </div>);
 }
-
-
-
 
 const App = () => {
   return (
@@ -44,14 +42,7 @@ const App = () => {
         <FormSemaglutide />
 
         <img src="brands.png" alt="logo" />
-        <div>
-          <h3>Experienced U.S. Licensed Doctors</h3>
-          <p>
-            “I firmly believe that managing weight should be straightforward and accessible for anyone who seeks it. That’s why our program at SkinnyRx is exceptional—you can receive FDA-approved, clinically-proven semaglutide treatment delivered directly to your doorstep at a fraction of the usual cost.”
-          </p>
-          <img src="doctor.png" alt="logo" />
-
-        </div>
+        <Doctors/>
 
         <div>
           <h2>Believe the Hype:</h2>
