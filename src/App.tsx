@@ -4,6 +4,7 @@ import { registerCoreBlocks } from "@quillforms/react-renderer-utils";
 import "./styles.css";
 import { FormSemaglutide } from "./components/FormSemaglutide";
 import { Doctors } from "./components/init_page/Doctors";
+import { Opinion } from "./Opinion";
 
 registerCoreBlocks();
 
@@ -18,11 +19,12 @@ function Ellipse() {
   </div>);
 }
 
+
 const App = () => {
   return (
 
-    <div style={{ width: "100%", height: "100vh" }}>
-      <div className="absolute w-full bg-[#FFD1F3] h-[400px] z-[-10]">
+    <div style={{ width: "100%", height: "100vh" }} className="flex flex-col items-center ">
+      <div className="absolute w-full bg-[#FFD1F3] h-[400px] z-[-10] ">
       </div>
       <header className="w-full bg-black text-white ">
         <p className="h-10 font-sans text-right text-lg ">
@@ -33,33 +35,14 @@ const App = () => {
         </div>
       </header>
       <Ellipse />
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center  max-w-[620px] ">
         <div className="h-[160px] flex">
           <img src="logo192.png" alt="logo" className="object-cover h-auto w-full" />
         </div>
-
-
         <FormSemaglutide />
-
         <img src="brands.png" alt="logo" />
-        <Doctors/>
-
-        <div>
-          <h2>Believe the Hype:</h2>
-          <h2>Customer Success with Clinically</h2>
-          <h2>Proven Meds</h2>
-          <h3>WebMD reviews for Generic Semaglutide®</h3>
-          <div>
-            <p>
-              “Semaglutide Has Revolutionized My Journey to Health in My 70s”
-            </p>
-            <img src="starts.png" alt="" />
-            <p>
-              The transformation has been incredibly profound. At 78 and 76 years old, my spouse and I have experienced a significant resurgence in our health and vitality thanks to semaglutide. It’s been a cornerstone in our weight loss journey, and we’re living proof that it’s never too late to start. If you’re hesitating, don’t. The change it brings is worth every moment. Wishing you all the best as you rediscover your health and joy in life!
-            </p>
-            <p>- Old Sparky</p>
-          </div>
-        </div>
+        <Doctors />
+        <Opinion/>
       </div>
 
 
