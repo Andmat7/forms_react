@@ -30,3 +30,12 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+/* medium */
+
+@font-face {
+  font-family: 'Azo Sans';
+  src: url('./fonts/azo-sans/AzoSans-Medium.woff2') format('woff2'),
+    url('./fonts/azo-sans/AzoSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
